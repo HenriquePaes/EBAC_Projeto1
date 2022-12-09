@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Author -->
+    <meta name="Author" content="Henrique Figueiredo Paes">
+
+    <!-- Description -->
+    <meta name="description"
+        content="Site desenvolvido para fins de execução do exercicio do Módulo 5 do curso Fullstack Python da EBAC.">
+
+    <!-- Page Title -->
+    <title>MegaOne Restaurante</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- Font Style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+    <!-- CSS used -->
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Navigation -->
+        <div class="container menu">
+            <a href="index.html" title="logo"><img src="img/logo2.png" alt="logo-default"></a>
+
+            <!-- Nav links -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#reservation">Reserva</a></li>
+                <li><a href="#ourmenu">Nosso Menu</a></li>
+                <li><a href="#ourblog">Nosso Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section: About Start -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div
+                        class="main-title style-two d-flex justify-content-md-around align-items-center flex-md-row text-md-left">
+                        <div>
+                            <h5 class="mb-3">Vida Boa e Saudável</h5>
+                            <h2 class="pb-0">
+                                Nós Servimos A Melhor <span class="family">Comida</span> da Cidade
+                            </h2>
+                        </div>
+
+                        <div>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, asperiores!
+                                Natus quam
+                                repellat placeat tenetur ab quod nostrum ipsam dolor. Expedita debitis nulla ipsam
+                                maxime quibusdam earum fugit, deserunt deleniti.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatum quidem, ducimus
+                                deserunt, sequi est explicabo quisquam repellat minima sed laboriosam obcaecati, ab
+                                nobis distinctio ipsa quasi? Natus, alias consequatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: About End -->
+
+    <!-- Section: Reserva Start -->
+    <section id="reservation" class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="appointment-box">
+                        <div class="form-title">
+                            <h2>Reserve Sua Mesa</h2>
+                        </div>
+                        <div class="form-para">
+                            <p>Informe seus dados abaixo, para reservarmos sua mesa.</p>
+                        </div>
+                        <form action="post" id="contact-form-data">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control m-mb-20" required placeholder="Nome"
+                                                name="userName">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="email" class="form-control m-mb-20" required
+                                                placeholder="Email" name="userEmail">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control m-mb-20" required
+                                                placeholder="Data da Reserva" name="userData">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="number" min="0" max="20" value="0" class="form-control m-mb-20"
+                                                required placeholder="Total de Pessoas" name="userTotalPeople">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="message form-control pt-2 m-mb-20" placeholder="Mensagem"
+                                                name="userMessage"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center text-md-right">
+                                            <button type="button"
+                                                class="contact_btn mt-3 btn btn-rounded btn-large btn-pink text-uppercase">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Reserva End -->
+
+    <!-- Section: Nosso Menu Start -->
+    <section id="ourmenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="port">
+                        <div class="portfolio-title">
+                            <h2 class="grey">Nosso Menu</h2>
+                        </div>
+
+                        <div class="portfolio subtitle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut voluptatem at,
+                                adipisci assumenda repellendus illum maiores mollitia iusto consequatur amet et
+                                accusamus ipsum laborum rem quis. Nisi, debitis maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container-portfolio">
+                    <img src="/img/portfolio-1.jpg" alt="portfolio-1">
+                    <img src="/img/portfolio-2.jpg" alt="portfolio-2">
+                    <img src="/img/portfolio-3.jpg" alt="portfolio-3">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container-portfolio">
+                    <img src="/img/portfolio-4.jpg" alt="portfolio-4">
+                    <img src="/img/portfolio-5.jpg" alt="portfolio-5">
+                    <img src="/img/portfolio-6.jpg" alt="portfolio-6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Nosso Menu End -->
+
+    <!-- Section: Nosso Blog Start -->
+    <section id="ourblog">
+        <div class="container">
+            <div class="row">
+                <div class="container-blog">
+                    <img src="/img/blog-image1.jpg" alt="blog-1">
+
+                    <div class="container-blog-text">
+                        <div class="testimonial-title">
+                            <h2>Cheio de Especiarias e Sabores</h2>
+                        </div>
+
+                        <p class="testimonial-subtitle grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Qui,
+                            itaque a quae tempora voluptatem error id deleniti adipisci, voluptas, voluptatum
+                            accusantium
+                            minus deserunt. Non debitis asperiores deleniti voluptatem nemo? Perferendis.</p>
+
+                        <div>
+                            <button type="button">Saiba mais...</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="container-blog">
+                    <div class="container-blog-text">
+                        <div class="testimonial-title">
+                            <h2>Ofertas da meia-noite</h2>
+                        </div>
+
+                        <p class="testimonial-subtitle grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Qui,
+                            itaque a quae tempora voluptatem error id deleniti adipisci, voluptas, voluptatum
+                            accusantium
+                            minus deserunt. Non debitis asperiores deleniti voluptatem nemo? Perferendis.</p>
+
+                        <button type="button">Saiba mais...</button>
+                    </div>
+
+                    <img src="/img/blog-image2.jpg" alt="blog-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Nosso Blog End -->
+
+    <!-- Section: Contato Start -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="container-address">
+                    <img src="/img/Endereco-fiscal.jpg" alt="blog-2">
+
+                    <div class="container-address-text">
+                        <div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        
+                        <h2>MegaOne Restaurante</h2>
+
+                        <div><p>123 Av. Paulista, São Paulo</p></div>
+                        
+                        <div><p>Telefone: (11) 95236-4152</p></div>
+                        
+                        <div>
+                            <p>e-mail: megaone@restaurante.com.br</p>
+                            <p>administrador: megaone-admin@restaurante.com.br</p>
+                        </div>                                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Contato End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-footer">
+            <p>&copy; Todos os direitos reservados - 2022. Desenvolvido por: Henrique F. Paes</p>
+        </div>                
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

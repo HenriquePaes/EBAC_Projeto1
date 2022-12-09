@@ -1,0 +1,394 @@
+/* Desabilitar valores padrões de algumas propriedades da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;    
+}
+
+/* Definindo valores padrões para a página */
+body {
+    font-family: 'Roboto', sans-serif; /* Estilo da Fonte */
+    font-size: 14px; /* Tamanho da Fonte */
+    font-weight: 400;
+    background-color: #fff; /* Cor de Fundo */
+    color: #7e8186; /* Cor dos textos */    
+    text-align: left; /* Alinhamento dos textos */
+}
+
+/* Definindo valores padrões para o objeto container */
+.container {
+    max-width: 1140px; /* largura máxima */
+    width: 100%; /* largura */
+    padding-right: 15px; /* margem interna direita */
+    padding-left: 15px; /* margem interna esquerda */
+    margin-left: auto; /* margem externa esquerda */
+    margin-right: auto; /* margem externa direita */
+}
+
+/* HEADER START */
+header .container {
+    display: flex; /* Alinhar objetos lado a lado */
+    align-items: center; /* Alinhar os objetos centralizados */
+    justify-content: space-between; /* Objetos separados */
+    margin: 10px auto;
+}
+
+ul > li{
+    display: inline; /* Alinhar o texto de menu em linha */
+    margin-left: 16px;    
+}
+
+#menu {
+    position: fixed; /* Mantém o header sempre fixado na parte superior da página */
+}
+
+ul > li > a {
+    text-decoration: none; /* Retirar o sublinhado dos textos de menu */
+}
+/* HEADER END */
+
+section {
+    padding: 120px 0px;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.main-title.style-two {
+    position: relative;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.justify-content-md-around {
+    justify-content: space-around!important;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+.flex-md-row {
+    flex-direction: row!important;
+}
+
+.text-md-left {
+    text-align: left!important; /* tag important força o css a utilizar este valor como propriedade */
+}
+
+.text-md-right {
+    text-align: right!important;
+}
+
+.main-title.style-two h5 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: initial;
+    color: #e02f46; /* Cor do Texto */
+}
+
+.main-title.style-two h2 {
+    font-size: 48px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-transform: initial;
+    font-weight: 500;
+    color: #484b59;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+.main-title.style-two p {
+    color: #797979;
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 16px;    
+}
+
+.mb-3 {
+    margin-bottom: 1rem!important;
+}
+
+.m-mb-20 {
+    width: 100%;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.mt-3 {
+    margin-top: 1rem!important;
+}
+
+.pb-0 {
+    padding-bottom: 0!important;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.family {
+    color: #84b813;
+}
+
+.form-bg {
+    background: url("img/table-img.jpg"); /* Imagem de Fundo */
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: top center;
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-12, .col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.appointment-box {
+    max-width: 540px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.form-title {
+    text-align: right;
+    color: #ffffff;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.form-para {
+    font-size: 13px;
+    font-family: 'roboto', sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: right;
+    font-weight: 300;
+}
+
+.form-control {
+    border: 1px solid #c2c4ca;
+    padding: 0 0 0 10px;
+    height: 50px;
+    border-radius: 3px;
+    color: #ffffff!important;
+    font-size: 13px;   
+    display: block; 
+    background-color: transparent;
+}
+
+input, textarea {
+    margin: 0;
+}
+
+input {
+    font: inherit;
+    max-width: 100%;
+    resize: none;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.m-label {
+    right: 20px;
+    font-size: 16px;
+    color: #a3a8b8;
+    margin: 0;
+    top: 10px;
+}
+
+label {
+    display: inline-block;
+    cursor: default;
+}
+
+.form-control.message {
+    height: 100px;
+    line-height: 1.5;
+}
+
+.form-control.row {
+    margin-bottom: 10px;
+}
+
+.pt-2 {
+    padding-top: .5rem!important;
+}
+
+/* SUBMIT BUTTON */
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn.btn-large {
+    font-size: 13px;
+    padding: 9px 34px !important;
+    line-height: 25px;
+}
+
+.btn.btn-pink {
+    color: #ffffff !important;
+    flex: 1 1 auto;
+    background-size: 200% auto;
+    transition: 1s;
+    background: #e02f46;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid transparent;
+    letter-spacing: .5px;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: all .3s ease-in-out !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+.port {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.portfolio-title h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.portfolio-subtitle {
+    margin-bottom: 26px;
+}
+
+.grey {
+    color: #484b59;
+}
+
+.container-portfolio {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-portfolio > img {
+    margin-left: 5px;
+    height: auto;
+    width: auto;
+}
+
+.container-blog {
+    display: flex;
+    background-color: #f6f7fb;
+    /*margin: 20px 0;*/
+    align-items: center;
+}
+
+.container-blog-text {
+    display: block;
+    align-items: center!important;
+    justify-items: center!important;
+    padding: 50px 0;
+    margin: auto 10px;
+}
+
+.container-blog-text button {
+    background-color: #2253f3;
+    color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.testimonial-title h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+}
+
+.testimonial-subtitle {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.container-address {
+    display: flex;   
+    background-color: #f6f7fb; 
+    align-items: center;
+}
+
+.container-address > img{
+    height: 100%;
+    width: 50%;
+    padding: 30px auto;
+}
+
+.container-address-text > div {
+    margin-top: 10px;
+}
+
+.container-address-text > h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-address-text {
+    display: flexbox;
+    justify-items: center;
+    align-items: center;
+    margin-left: 50px;    
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
